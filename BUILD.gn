@@ -27,4 +27,7 @@ ohos_cargo_crate("lib") {
   cargo_pkg_description = "Link libstdc++ or libc++ automatically or manually"
   build_root = "build.rs"
   build_sources = [ "build.rs" ]
+  module_output_extension = ".rlib"
+  part_name = "rust_link_cplusplus"
+  subsystem_name = "thirdparty"
 }
